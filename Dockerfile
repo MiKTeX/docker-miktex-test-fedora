@@ -1,8 +1,8 @@
-FROM fedora:28
+FROM fedora:30
 
-LABEL Description="MiKTeX test environment, Fedora 28"
+LABEL Description="MiKTeX test environment, Fedora 30"
 LABEL Vendor="Christian Schenk"
-LABEL Version="2.9.6778"
+LABEL Version="2.9.7063"
 
 RUN    dnf install -y \
            cmake \
