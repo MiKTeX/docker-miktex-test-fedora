@@ -1,5 +1,8 @@
 #!/bin/sh
 set -e
+rm -fr /miktex/test/logfiles
+mkdir /miktex/test/logfiles
+export MIKTEX_CORE_USERLOGDIRECTORY=/miktex/test/logfiles
 miktexsetup finish
 if [ -d /miktex/repository ]; then
     mpm --set-repository=/miktex/repository
@@ -12,7 +15,4 @@ cmake /miktex/test-suite
 set +e
 make test
 ec=$?
-rm -fr logfiles
-mkdir logfiles
-cp ~/.miktex/texmfs/data/miktex/log/* logfiles
 exit $ec
