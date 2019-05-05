@@ -5,6 +5,7 @@ LABEL Vendor="Christian Schenk"
 LABEL Version="2.9.7064"
 
 RUN    dnf install -y \
+           binutils \
            cmake \
            curl \
            ghostscript \
