@@ -1,6 +1,6 @@
-FROM fedora:30
+FROM fedora:32
 
-LABEL Description="MiKTeX test environment, Fedora 30"
+LABEL Description="MiKTeX test environment, Fedora 32"
 LABEL Vendor="Christian Schenk"
 LABEL Version="2.9.7064"
 
