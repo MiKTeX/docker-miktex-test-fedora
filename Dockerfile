@@ -1,14 +1,14 @@
-FROM fedora:32
+FROM fedora:33
 
-LABEL Description="MiKTeX test environment, Fedora 32"
+LABEL Description="MiKTeX test environment, Fedora 33"
 LABEL Vendor="Christian Schenk"
-LABEL Version="2.9.7429"
+LABEL Version="21.3"
 
 RUN    dnf install -y \
            binutils \
            cmake \
            curl \
-	   diffutils \
+           diffutils \
            ghostscript \
            gpg \
            make \
