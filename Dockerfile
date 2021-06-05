@@ -1,8 +1,8 @@
-FROM fedora:33
+FROM fedora:34
 
-LABEL Description="MiKTeX test environment, Fedora 33"
+LABEL Description="MiKTeX test environment, Fedora 34"
 LABEL Vendor="Christian Schenk"
-LABEL Version="21.3"
+LABEL Version="21.6"
 
 RUN    dnf install -y \
            binutils \
