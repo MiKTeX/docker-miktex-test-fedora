@@ -2,7 +2,7 @@ FROM fedora:35
 
 LABEL Description="MiKTeX test environment, Fedora 35"
 LABEL Vendor="Christian Schenk"
-LABEL Version="22.1"
+LABEL Version="22.8.27"
 
 RUN    dnf install -y \
            binutils \
