@@ -5,12 +5,12 @@ mkdir /miktex/test/logfiles
 export MIKTEX_CORE_USERLOGDIRECTORY=/miktex/test/logfiles
 miktexsetup finish
 if [ -d /miktex/repository ]; then
-    mpm --set-repository=/miktex/repository
+    upgrade_options="--repository /miktex/repository"
 fi
 initexmf --set-config-value=[MPM]AutoInstall=1
-mpm --package-level=basic --upgrade
+miktex packages upgrade ${upgrade_options} basic
 cd /miktex/test
-export PATH=~/bin:$PATH
+export PATH=~/bin:"${PATH}"
 cmake /miktex/test-suite
 set +e
 make test
