@@ -4,7 +4,7 @@ if [ -d /miktex/build ]; then
     dnf install -y /miktex/build/*.rpm
 else
     sudo rpm --import "https://miktex.org/download/key"
-    curl -L -o /etc/yum.repos.d/miktex.repo https://miktex.org/download/fedora/38/miktex.repo
+    curl -L -o /etc/yum.repos.d/miktex.repo https://miktex.org/download/fedora/39/miktex.repo
     dnf -y install miktex
 fi
 

@@ -1,14 +1,14 @@
-# Fedora 38 docker image with MiKTeX test environment
+# Fedora 39 docker image with MiKTeX test environment
 
 ## Obtaining the image
 
 Get the latest image from the registry:
 
-    docker pull miktex/miktex-test-fedora:38
+    docker pull miktex/miktex-test-fedora:39
 
 or build it yourself:
 
-    docker build --tag miktex/miktex-test-fedora:38 .
+    docker build --tag miktex/miktex-test-fedora:39 .
 
 ## Using the image
 
@@ -35,7 +35,7 @@ Run the tests:
     git clone https://github.com/MiKTeX/miktex-testing ~/work/miktex/test-suite
     docker run --rm -t \
       -v ~/work/miktex/test-suite:/miktex/test-suite:ro \
-      -v ~/work/miktex/tests/fedora-38:/miktex/test:rw \
+      -v ~/work/miktex/tests/fedora-39:/miktex/test:rw \
       -e USER_ID=`id -u` \
       -e GROUP_ID=`id -g` \
-      miktex/miktex-test-fedora:38
+      miktex/miktex-test-fedora:39
