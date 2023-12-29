@@ -8,10 +8,6 @@ else
     dnf -y install miktex
 fi
 
-# libQt5Core.so.5 is build for Linux kernel 4.11 which is by far too new
-# see: https://github.com/Microsoft/WSL/issues/3023
-strip --remove-section=.note.ABI-tag /usr/lib64/libQt5Core.so.5
-
 GROUP_ID=${GROUP_ID:-1001}
 USER_ID=${USER_ID:-1001}
 
