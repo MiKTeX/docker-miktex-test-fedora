@@ -1,14 +1,14 @@
-# Fedora 39 docker image with MiKTeX test environment
+# Fedora 40 docker image with MiKTeX test environment
 
 ## Obtaining the image
 
 Get the latest image from the registry:
 
-    docker pull miktex/miktex-test-fedora:39
+    docker pull miktex/miktex-test-fedora:40
 
 or build it yourself:
 
-    docker build --tag miktex/miktex-test-fedora:39 .
+    docker build --tag miktex/miktex-test-fedora:40 .
 
 ## Using the image
 
