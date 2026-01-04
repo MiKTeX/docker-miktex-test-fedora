@@ -15,4 +15,5 @@ cmake /miktex/test-suite
 set +e
 make test
 ec=$?
+miktex diag collect
 exit $ec
