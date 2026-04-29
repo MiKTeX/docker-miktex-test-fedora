@@ -2,7 +2,7 @@ FROM fedora:44
 
 LABEL Description="MiKTeX test environment, Fedora 44"
 LABEL Vendor="Christian Schenk"
-LABEL Version="26.2.21"
+LABEL Version="26.4.29"
 
 RUN \
     dnf install -y \

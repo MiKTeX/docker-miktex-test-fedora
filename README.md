@@ -38,4 +38,4 @@ Run the tests:
       -v ~/work/miktex/tests/fedora-39:/miktex/test:rw \
       -e USER_ID=`id -u` \
       -e GROUP_ID=`id -g` \
-      miktex/miktex-test-fedora:39
+      miktex/miktex-test-fedora:44
